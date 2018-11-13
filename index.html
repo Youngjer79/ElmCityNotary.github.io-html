@@ -2,195 +2,453 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elm City Notary</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="css/styles.min.css">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elm City Notary</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark">
-        <div class="container-fluid"><a class="navbar-brand" href="#home">Elm City Mobile Notary</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse"
-                id="navcol-1">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#service">Services</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#rates">Rates</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+<body id="home" class="scrollspy">
+  <!--Navbar-->
+  <div class="navbar-fixed">
+    <nav class="black">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo"><span>Elm City</span> Notary</a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#rates">Rates</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contacts</a></li>
+          </ul>
         </div>
+      </div>
     </nav>
-    <div class="jumbotron" id="promo" style="background-image:url(/img/showcase.jpg&quot;);background-repeat:no-repeat;background-size:cover;width:100%;height:790px;padding-top:160px;padding-bottom:160px;">
-        <h1 style="font-size:80px;font-weight:bold;color:#f9e526;">Elm City Notary</h1>
-        <p style="font-size:40px;color:#ffffff;">Best Notary Service In The Greater New Haven Area</p>
-        <p><a class="btn btn-primary" role="button" href="#intro" style="padding-top:15px;padding-right:60px;padding-bottom:15px;padding-left:60px;">Learn more</a></p>
-    </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12" id="intro"><img class="img-fluid" src="img/notary.jpg" style="width:100%;"></div>
-            </div>
+  </div>
+  <ul class="sidenav" id="mobile-nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Rates</a></li>
+    <li><a href="#">Testimonials</a></li>
+    <li><a href="#">Contacts</a></li>
+  </ul>
+  <!--Section Slider-->
+  <section class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/new-haven.jpg">
+        <!-- random image -->
+        <div class="caption center-align">
+          <h1>Best Notary Service in the Greater New Haven Area</h1>
+          <h3 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, nemo..</h3>
+          <a href="#" class="btn btn-primary">Call Now</a>
         </div>
-    </div>
-    <div class="features-clean">
-        <div class="container">
-            <div id="service"></div>
-            <div id="service" class="intro">
-                <h2 class="text-center">Services</h2>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
-            </div>
-            <div class="row features">
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-file-text-o icon"></i>
-                    <h3 class="name">Mobile Notary</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-briefcase icon"></i>
-                    <h3 class="name">Loan Closings</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-suitcase icon"></i>
-                    <h3 class="name">Apostile Processing<br><br></h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-clock-o icon"></i>
-                    <h3 class="name">Always available</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-plane icon"></i>
-                    <h3 class="name">Fast</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-phone icon"></i>
-                    <h3 class="name">Mobile-first</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-                </div>
-            </div>
-            <div id="about"></div>
+      </li>
+      <li>
+        <img src="img/new-haven4.jpg">
+        <!-- random image -->
+        <div class="caption left-align">
+          <h1>Contact Us For Your Notary Needs</h1>
+          <h3 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, officia!.</h3>
+          <a href="#" class="btn btn-primary">Call Now</a>
         </div>
-    </div>
-    <div style="height:100%;background-color:#d1c6b5;padding-top:10px;padding-bottom:100px;background-image:url(&quot;../img/finialized.jpg&quot;);">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12" style="padding-top:25px;padding-bottom:25px;">
-                    <h1 class="text-center" style="padding-top:25px;color:#ffffff;">About Our Company</h1>
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3 style="color:#ffffff;">Services</h3>
-                    <p style="color:#ffffff;"><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, sint <br>obcaecati aliquam excepturi ad, totam in quas ducimus nisi possimus <br>fugit rerum omnis!&nbsp;<br><br></p>
-                </div>
-                <div class="col-md-4">
-                    <h3 style="color:#ffffff;">Documents</h3>
-                    <p style="color:#ffffff;"><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, sint <br>obcaecati aliquam excepturi ad, totam in quas ducimus nisi possimus <br>fugit rerum omnis!&nbsp;<br></p>
-                </div>
-                <div class="col-md-4">
-                    <h3 style="color:#ffffff;">Scheduling</h3>
-                    <p style="color:#ffffff;"><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, sint <br>obcaecati aliquam excepturi ad, totam in quas ducimus nisi possimus <br>fugit rerum omnis!<br><br></p>
-                </div>
-            </div>
-        </div><img class="img-fluid float-left" src="assets/img/notary-public-seal.png" style="width:100px;height:100px;">
-        <div></div>
-    </div>
-    <div style="padding-top:25px;height:100%;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12" style="padding-top:25px;padding-bottom:25px;width:100%;margin-right:50px;margin-left:50px;"><img class="img-fluid" src="../img/mobile_notary.jpg"></div>
-            </div>
+      </li>
+      <li>
+        <img src="img/new-haven2.jpg">
+        <!-- random image -->
+        <div class="caption right-align">
+          <h1>Around The Clock Service</h1>
+          <h3 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, repellat.</h3>
+          <a href="#" class="btn btn-primary">Call Now</a>
         </div>
+      </li>
+    </ul>
+  </section>
+
+  <!--Section: About-->
+  <section id="about" class="section-about">
+    <div class="container">
+      <h2 class="section-head-about">
+        <i class="fas fa-pen-nib"></i>ABOUT
+      </h2>
+      <p class="lead">If you need reliable notary services in a hurry, contact the insured professionals at Elm City Mobile Notary. Elm City
+        Mobile Notary is a unique company specializing in general notarizations as well as a list of other services and best
+        of all WE COME TO YOU! Elm City Mobile Notary is a reliable service servicing New Haven, Hamden,West Haven, East
+        Haven, Branford,Milford, North Haven,Meriden, Waterbury, Wallingford,Orange, Southington and all surrounding areas.
+        Our mobile notary signing agents are available to come to a home, office or just about anywhere else on short notice.
+        We also travel to hospitals, rehabilitation facilities, nursing homes, coffee shops or anywhere notarizations are
+        needed.
+      </p>
+      <img src="img/smartdevice.jpg" alt="" height="400px">
+      <img src="img/mobile-notary.jpg" alt="">
     </div>
-    <div id="rates" class="rates">
+
+    <section class="container-fluid px-0">
+      <div class="row align-items-center content">
+        <div class="col-md-6 order-1 order-md-1">
+          <h2>Why Choose Elm City Mobile Notary </h2>
+          <h3>Convenience:</h3>
+          <p> We will meet you at a location that is most convenient for you at any time day or night.</p>
+
+          <h3>Ease of Use:</h3>
+          <p> Schedule our mobile notary services simply by filling out and submitting our online contact form. You can also
+            give us a call 24 hours a day!</p>
+
+          <h3>Insured Agents:</h3>
+          <p>All our notary agents are covered by errors and omissions insurance policy for your protection and peace of mind.</p>
+
+          <h3>Time Savings:</h3>
+          <p>We’ll save you the time and hassle of finding a notary on short notice.</p>
+
+          <h3>Repeat Scheduling:</h3>
+          <p>Our services are perfect for professionals who routinely need to schedule signings, whether it’s on a daily, weekly
+            or monthly basis.</p>
+
+          <h3>No Extra Fees:</h3>
+          <p> No Extra fees for last minute appointments, or out of ordinary hour appointments. (Additional fees are only for
+            extended wait times beyond the scheduled appointment time or for additional services).</p>
+          <img src="img/notary.jpg" alt="" height="450px" width="200px">
+        </div>
+        <div class="col-md-6 text-center order-2 order-md-2">
+          <div class="row justify-content-end">
+            <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+              <h2>SERVICE REQUEST</h2>
+              <label for="name">Company Name</label><br>
+              <input type="text">
+              <label for="name"> Name</label><br>
+              <input type="text">
+              <label for="number">Phone</label><br>
+              <input type="text">
+              <label for="email">Email</label><br>
+              <input type="text"><br><br> Service Needed
+              <input type="checkbox" name="service_choice" id="service_choice"> Notarization
+              <input type="checkbox" name="service_choice" id="service_choice"> Loan Closing
+              <input type="checkbox" name="service_choice" id="service_choice"> Apostile<br> Date of Service
+              <input type="date" name="date" id="date"><br><br> Complete Address
+              <input type="text" name="street" placeholder="Street"><br>
+              <input type="text" name="city" placeholder="City"><br>
+              <input type="text" name="state" placeholder="State"><br>
+              <input type="text" name="zip" placeholder="Zipcode"><br><br> Additional Notes
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <button>Send</button><br>
+              <br>
+              <br>
+              <h3>CONTACT US:</h3>
+              Phone: 555-555-5555 Email:hello@elmcitymobilenotaryservice.com
+              <img src="/img/notary-public-seal.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Section: Services-->
+      <section id="services" class="section-services">
         <div class="container">
-            <div class="intro">
-                <h2 class="text-center" style="font-size:40px;">OUR RATES</h2>
+          <h2 class="section-head-services">
+            <i class="far fa-folder-open"></i> SERVICES
+          </h2>
+          <div class="row">
+            <div class="col-sm-4">
+              <i class="fas fa-car"></i>
+              <h4>Mobile Notary</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nesciunt molestias voluptatibus eaque accusantium dolorum
+                distinctio commodi laborum adipisci possimus.
+              </p>
             </div>
-            <div class="row people" style="padding-top:15px;padding-bottom:15px;">
-                <div class="col-md-6 col-lg-4 item ns" style="padding-bottom:50px;">
-                    <h3 class="name">NOTARY SERVICES</h3>
-                    <p class="title" style="font-size:35px;color:#000000;">$50</p>
-                    <p>Travel Fee</p>
-                    <p class="description"><br>Up to 25 Miles<br><br>Same Day Service<br><br>Rush Services<br><br>24 Hours<br><br><button class="btn btn-light active btn-lg" type="button">Order</button><br></p>
-                </div>
-                <div class="col-md-6 col-lg-4 item fp">
-                    <h3 class="name">FINGERPRINTING</h3>
-                    <p class="title" style="font-size:35px;color:#000000;">$25</p>
-                    <p>Per Card</p>
-                    <p class="description"><br>$50 Travel Fee<br><br>Same Day Service<br><br>Rush Services<br><br>24 Hours<br><br><button class="btn btn-primary btn-lg" type="button">Order</button></p>
-                </div>
-                <div class="col-md-6 col-lg-4 item call">
-                    <h3 class="name">SIGNING AGENT</h3>
-                    <p class="title" style="font-size:35px;color:#000000;">CALL</p>
-                    <p>For quote</p>
-                    <p class="description"><br>Travel Included<br><br>Scan Back Service<br><br>Courier Services<br><br>24 Hours<br><br><button class="btn btn-primary btn-lg" type="button">Order</button><br></p>
-                </div>
+            <div class="col-sm-4">
+              <i class="fas fa-file"></i>
+              <h4>Loan Closing</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nesciunt molestias voluptatibus eaque accusantium dolorum
+                distinctio commodi laborum adipisci possimus.
+              </p>
             </div>
+            <div class="col-sm-4">
+              <i class="fas fa-clock"></i>
+              <h4>Always available</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nesciunt molestias voluptatibus eaque accusantium dolorum
+                distinctio commodi laborum adipisci possimus.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <i class="fas fa-briefcase"></i>
+              <h4>Apostile Processing</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nesciunt molestias voluptatibus eaque accusantium dolorum
+                distinctio commodi laborum adipisci possimus.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <i class="fas fa-shipping-fast"></i>
+              <h4>Fast</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nesciunt molestias voluptatibus eaque accusantium dolorum
+                distinctio commodi laborum adipisci possimus.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <i class="fas fa-phone"></i>
+              <h4>Mobile-first</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nesciunt molestias voluptatibus eaque accusantium dolorum
+                distinctio commodi laborum adipisci possimus.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="container" style="padding-top:35px;padding-bottom:35px;">
-            <p><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Government issued photo I.D. is required for all parties who will be signing documents.<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp;We accept Cash, Visa, Mastercard, American Express, Discover and PayPal as a form of payment.<br><br></p><img class="img-fluid" src="assets/img/payments.png" style="margin-right:150px;margin-left:150px;"></div>
-    </div>
-    <div id="contact" style="background-image:url(&quot;../img/pexels-photo-372757.jpg&quot;);">
-        <div class="container" id="info-container">
+        </div>
+      </section>
+
+      <!--Section: Rates-->
+      <section id="rates" class="rates">
+        <div class="container-fluid">
+          <div class="container">
+            <h2 id="rates" class="section-head-rates">
+              <i class="fas fa-file-invoice-dollar"></i> RATES
+            </h2>
             <div class="row">
-                <div class="col-md-12">
-                    <h2 class="text-center text-info">Contact Us</h2>
+              <div class="col-sm-4">
+                <div class="card text-center">
+                  <div class="title">
+                    <i class="fas fa-stamp"></i>
+                    <h2>Notary Services</h2>
+                  </div>
+                  <div class="price">
+                    <h4><span>$</span>50</h4>
+                    <h6>Travel Fee</h6>
+                  </div>
+                  <div class="option">
+                    <ul>
+                      <li><i class="fas fa-check"></i>Up to 25 miles</li>
+                      <li><i class="fas fa-check"></i>Same Day Service</li>
+                      <li><i class="fas fa-check"></i>Rush Services</li>
+                      <li><i class="fas fa-check"></i>24 Hours</li>
+                    </ul>
+                  </div>
+                  <a href="#">Order Now</a>
                 </div>
-                <div class="col-12 col-sm-6 col-md-6" id="contact-box">
-                    <p id="contact-text" style="color:#ffffff;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nam magnam natus tempora cumque, aliquam deleniti voluptatibus voluptas. Repellat vel, et itaque commodi iste ab, laudantium voluptas deserunt nobis. </p>
-                    <div class="info-box"><i class="fa fa-map-marker my-info-icons"></i><span class="text-uppercase text-info">Address: </span><span style="color:#ffffff;">MCC Road, Aba, Abia State Nigeria</span></div>
-                    <div class="info-box"><i class="fa fa-envelope my-info-icons"></i><span class="text-uppercase text-info">Email: </span><span style="color:#ffffff;">contact@ensignhospital.org </span></div>
-                    <div class="info-box"><i class="fa fa-phone-square my-info-icons"></i><span class="text-uppercase text-info">Phone: </span><span style="color:#ffffff;">+234000000000 </span></div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card text-center">
+                  <div class="title">
+                    <i class="fas fa-fingerprint"></i>
+                    <h2>Fingerprinting</h2>
+                  </div>
+                  <div class="price">
+                    <h4><span>$</span>25</h4>
+                    <h6>Per Card</h6>
+                  </div>
+                  <div class="option">
+                    <ul>
+                      <li><i class="fas fa-check"></i>$50 Travel Fee</li>
+                      <li><i class="fas fa-check"></i>Same Day Service</li>
+                      <li><i class="fas fa-check"></i>Rush Services</li>
+                      <li><i class="fas fa-times"></i>24 Hours</li>
+                    </ul>
+                  </div>
+                  <a href="#">Order Now</a>
                 </div>
-                <div class="col-12 col-sm-6 col-md-6 site-form">
-                    <form id="my-form">
-                        <div class="form-group"><label class="sr-only" for="firstname">First Name</label><input class="form-control" type="text" name="firstname" placeholder="First Name" autofocus="" id="firstname"></div>
-                        <div class="form-group"><label class="sr-only" for="lastname">Last Name</label><input class="form-control" type="text" name="lastname" placeholder="Last Name" id="lastname"></div>
-                        <div class="form-group"><label class="sr-only" for="phonenumber">Phone Number</label><input class="form-control" type="tel" name="phonenumber" required="" placeholder="Phone" id="phonenumber"></div>
-                        <div class="form-group"><label class="sr-only" for="email">Email Address</label><input class="form-control" type="text" name="email" required="" placeholder="Email" id="email"></div>
-                        <div class="form-group"><label class="sr-only" for="messages">Last Name</label><textarea class="form-control" rows="8" name="messages" required="" placeholder="Message"></textarea></div><button class="btn btn-light btn-lg" type="submit" id="form-btn">SEND </button></form>
+              </div>
+              <div class="col-sm-4">
+                <div class="card text-center">
+                  <div class="title">
+                    <i class="fas fa-file-signature"></i>
+                    <h2>Signing Agent</h2>
+                  </div>
+                  <div class="price">
+                    <h4><span>Call</span></h4>
+                    <h6>For Quote</h6>
+                  </div>
+                  <div class="option">
+                    <ul>
+                      <li><i class="fas fa-check"></i>Travel Included</li>
+                      <li><i class="fas fa-check"></i>Scan Bank Service</li>
+                      <li><i class="fas fa-check"></i>Courier Services</li>
+                      <li><i class="fas fa-times"></i>24 Hours</li>
+                    </ul>
+                  </div>
+                  <a href="#">Order Now</a>
                 </div>
-                <div class="clearfix"></div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="footer-dark">
+      </section>
+
+      <!--Section: Testimonials-->
+      <section id="testimonials" class="testimonials">
+        <div class="container-testimonials">
+          <h2 id="testimonials" class="section-head-testimonials">
+            <i class="far fa-comments"></i> Testimonials
+          </h2>
+          <h3>What Some of our customers have to say about our company</h3>
+          <div class="row">
+            <div class="col-sm-4">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nesciunt molestias voluptatibus eaque accusantium dolorum
+                distinctio commodi laborum adipisci possimus.
+              </p>
+              <cite><img src="img/image1.jpg" alt="">Jane Doe</cite>
+            </div>
+            <div class="col-sm-4">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nesciunt molestias voluptatibus eaque accusantium dolorum
+                distinctio commodi laborum adipisci possimus.
+              </p>
+              <cite><img src="img/image2.jpg" alt="">Jane Doe</cite>
+            </div>
+            <div class="col-sm-4">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nesciunt molestias voluptatibus eaque accusantium dolorum
+                distinctio commodi laborum adipisci possimus.
+              </p>
+              <cite><img src="img/image3.jpg" alt="">John Doe</cite>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nesciunt molestias voluptatibus eaque accusantium dolorum
+              distinctio commodi laborum adipisci possimus.
+            </p>
+            <cite><img src="img/image4.jpg" alt="">John Doe</cite>
+          </div>
+          <div class="col-sm-4">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nesciunt molestias voluptatibus eaque accusantium dolorum
+              distinctio commodi laborum adipisci possimus.
+            </p>
+            <cite><img src="img/image5.jpg" alt="">Jane Doe</cite>
+          </div>
+          <div class="col-sm-4">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nesciunt molestias voluptatibus eaque accusantium dolorum
+              distinctio commodi laborum adipisci possimus.
+            </p>
+            <cite><img src="img/image6.jpg" alt="">John Doe</cite>
+
+          </div>
+        </div>
+        </div>
+        </div>
+      </section>
+
+      <!--Contact section-->
+      <section id="contact">
+        <div class="container contact-form">
+          <h1 class="intro-texty text-center">Contact Us</h1>
+          <hr>
+
+          <div class="row">
+            <div class="col-md-6">
+              <address>Greater New Haven Area</address>
+              <p>Email:- test@email.com</p>
+              <p>Phone:-555-555-5555 </p>
+            </div>
+            <div class="col-md-8">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191838.59928551226!2d-73.06917825098223!3d41.298461436458844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7d8443a8070e5%3A0xf6a354c659b264ed!2sNew+Haven%2C+CT!5e0!3m2!1sen!2sus!4v1542127156309"
+                width="400" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <div class="col-md-4 ">
+              <div class="form-group ">
+                <label for=" ">Name</label>
+                <input type="text " class="form-control ">
+              </div>
+
+              <div class="form-group ">
+                <label for=" ">Email</label>
+                <input type="text " class="form-control ">
+              </div>
+
+              <div class="form-group ">
+                <label for=" ">Message</label>
+                <textarea class="form-control " rows="7 "></textarea>
+              </div>
+
+              <div class="form-group ">
+                <button class="btn btn-primary btn-block ">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!--Footer-->
+      <div class="footer">
         <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="">Mobile Notary</a></li>
-                            <li><a href="">Loan Closings</a></li>
-                            <li><a href="">Apostile Processing</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="">Service</a></li>
-                            <li><a href="">Documents</a></li>
-                            <li><a href="">Scheduling</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 item text">
-                        <h3>Company Name</h3>
-                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
-                    </div>
-                    <div class="col item social"><a href=""><i class="icon ion-social-facebook"></i></a><a href=""><i class="icon ion-social-twitter"></i></a><a href=""><i class="icon ion-social-snapchat"></i></a><a href=""><i class="icon ion-social-instagram"></i></a></div>
-                </div>
-                <p class="copyright">Elm City Notary © 2018</p>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-md-3 item">
+                <h3>Services</h3>
+                <ul>
+                  <li><a href="#">Mobile Notary</a></li>
+                  <li><a href="#"></a>Loan Closings</li>
+                  <li><a href="#"></a>Apostile Processing</li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-md-3 item">
+                <h3>About</h3>
+                <ul>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Documents</a></li>
+                  <li><a href="#">Scheduling</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 item text">
+                <h3>Elm City Notary</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptatum labore voluptates esse,
+                  aspernatur quod.
+                </p>
+              </div>
+              <div class="col item social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+              </div>
+              <div class="fine-print">
+                <p class="copyright">Elm City Notary <i class="fa fa-copyright"></i> 2018</p>
+                <a href="#">FAQ</a>
+                <a href="#">Terms</a>
+                <a href="#">Sponsorship</a>
+              </div>
             </div>
+          </div>
         </footer>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+      </div>
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script>
+        //Sidenav
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav, {});
+
+        //Slider
+        const slider = document.querySelector('.slider'); M.Slider.init(slider, {
+          indicators: false, height: 600, transition: 500,
+          interval: 6000
+        });
+      </script>
 </body>
 
 </html>
