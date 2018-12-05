@@ -5,8 +5,6 @@
 
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -14,39 +12,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elm City Notary</title>
 </head>
-
 <body id="home" class="scrollspy">
   <!--Navbar-->
-  <div class="navbar-fixed">
-    <nav class="black">
-      <div class="container">
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo"><span>Elm City</span> Notary</a>
-          <a href="#" data-target="mobile-nav" class="sidenav-trigger">
-            <i class="material-icons">menu</i>
-          </a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#rates">Rates</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contacts</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <ul class="sidenav" id="mobile-nav">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Rates</a></li>
-    <li><a href="#">Testimonials</a></li>
-    <li><a href="#">Contacts</a></li>
-  </ul>
+ <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed">
+   <a class="navbar-brand" href="#"><span>Elm City</span> Notary</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mr-auto">
+         <li><a href="#">Home</a></li>
+         <li><a href="#about">About</a></li>
+         <li><a href="#services">Services</a></li>
+         <li><a href="#rates">Rates</a></li>
+         <li><a href="#testimonials">Testimonials</a></li>
+         <li><a href="#contact">Contacts</a></li>
+     </ul>
+   </div>
+  </nav>
   <!--Section Slider-->
-  <section class="slider">
+  <div class="slider">
     <ul class="slides">
       <li>
         <img src="img/new-haven.jpg">
@@ -54,7 +39,7 @@
         <div class="caption center-align">
           <h1>Best Notary Service in the Greater New Haven Area</h1>
           <h3 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, nemo..</h3>
-          <a href="#" class="btn btn-primary">Call Now</a>
+          <a href="about" class="btn btn-primary">Get Started</a>
         </div>
       </li>
       <li>
@@ -63,7 +48,7 @@
         <div class="caption left-align">
           <h1>Contact Us For Your Notary Needs</h1>
           <h3 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, officia!.</h3>
-          <a href="#" class="btn btn-primary">Call Now</a>
+          <a href="about" class="btn btn-primary">Get Started</a>
         </div>
       </li>
       <li>
@@ -72,11 +57,11 @@
         <div class="caption right-align">
           <h1>Around The Clock Service</h1>
           <h3 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, repellat.</h3>
-          <a href="#" class="btn btn-primary">Call Now</a>
+          <a href="#" class="btn btn-primary">Get Started</a>
         </div>
       </li>
     </ul>
-  </section>
+  </div>
 
   <!--Section: About-->
   <section id="about" class="section-about">
@@ -94,12 +79,9 @@
       </p>
       <img src="img/smartdevice.jpg" alt="" height="400px">
       <img src="img/mobile-notary.jpg" alt="">
-    </div>
-
-    <section class="container-fluid px-0">
       <div class="row align-items-center content">
         <div class="col-md-6 order-1 order-md-1">
-          <h2>Why Choose Elm City Mobile Notary </h2>
+          <h2 style="text-align: center;">Why Choose Elm City Mobile Notary </h2>
           <h3>Convenience:</h3>
           <p> We will meet you at a location that is most convenient for you at any time day or night.</p>
 
@@ -153,6 +135,8 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
       <!--Section: Services-->
       <section id="services" class="section-services">
